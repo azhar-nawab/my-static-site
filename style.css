@@ -1,29 +1,53 @@
-/* style.css */
+/* Apply Google Font */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f8ff;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://source.unsplash.com/1600x900/?nature,landscape') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
   text-align: center;
   margin: 0;
   padding: 50px;
 }
 
+/* Animate the heading */
 h1 {
-  color: #1a73e8;
   font-size: 3rem;
   margin-bottom: 20px;
+  color: #ffffff;
+  opacity: 0;
+  animation: slideIn 1s ease forwards;
 }
 
+/* Subtext */
 p {
   font-size: 1.2rem;
-  color: #555;
+  margin-bottom: 30px;
 }
 
-a {
-  color: #1a73e8;
-  text-decoration: none;
+/* Button Styling */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-a:hover {
-  text-decoration: underline;
+button:hover {
+  background-color: #0c5fce;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
